@@ -126,15 +126,15 @@ Error scales with stock price -- $5.63 on a $100 stock is ~5.6%, on a $50 stock 
 ## Tech stack
 
 - **ML**: TensorFlow/Keras, NumPy, Pandas, scikit-learn
-- **Backend**: FastAPI, Uvicorn, yfinance
+- **Backend**: FastAPI, yfinance
 - **Frontend**: React 19, TypeScript, Vite, Tailwind CSS v4, shadcn/ui, Recharts
 - **Research**: Jupyter Notebook
 
 ## Known limitations
 
-- Model trains from scratch every request -- not ideal, but keeps things simple for a school project. A production system would cache trained models.
+- Model trains from scratch every request -- not ideal. A production system would cache trained models.
 - Only uses price/volume data. No sentiment, no earnings, no macro indicators.
-- MinMaxScaler is fit on all data before train/test split, so there's some information leakage. Good enough for a demo, wouldn't fly in a real trading system.
+- MinMaxScaler is fit on all data before train/test split, so there's some information leakage.
 - **Not financial advice.** This is a class project.
 
 ## References
