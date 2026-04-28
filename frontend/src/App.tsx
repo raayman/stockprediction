@@ -13,7 +13,7 @@ const App = () => (
         <div className="flex items-center gap-2 text-xs text-muted-foreground">
           <span className="hidden sm:inline">CAP 4630 · AI School Project</span>
           <a
-            href="https://github.com"
+            href="https://github.com/raayman/stockprediction"
             target="_blank"
             rel="noreferrer"
             className="rounded-lg p-1.5 hover:bg-accent transition-colors"
