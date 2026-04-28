@@ -181,9 +181,9 @@ export const PriceChart = ({ history, spotPrice, lastDate, predictions }: PriceC
 
         <div className="mt-3 flex flex-wrap gap-x-4 gap-y-1.5 px-1">
           <LegendItem color="oklch(0.488 0.243 264.376)" label="Historical Close" shape="line" />
-          <LegendItem color="oklch(0.696 0.17 162.48)" label={`1D → $${predictions["1d"].price.toFixed(2)}`} shape="dot" />
-          <LegendItem color="oklch(0.769 0.188 70.08)" label={`1W → $${predictions["1w"].price.toFixed(2)}`} shape="dot" />
-          <LegendItem color="oklch(0.645 0.246 16.439)" label={`1M → $${predictions["1m"].price.toFixed(2)}`} shape="dot" />
+          <LegendItem color="oklch(0.696 0.17 162.48)" label={`1D: $${predictions["1d"].price.toFixed(2)}`} shape="dot" />
+          <LegendItem color="oklch(0.769 0.188 70.08)" label={`1W: $${predictions["1w"].price.toFixed(2)}`} shape="dot" />
+          <LegendItem color="oklch(0.645 0.246 16.439)" label={`1M: $${predictions["1m"].price.toFixed(2)}`} shape="dot" />
         </div>
       </CardContent>
     </Card>

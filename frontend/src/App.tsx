@@ -1,4 +1,4 @@
-import { BrainCircuit, Github } from "lucide-react"
+import { Github } from "lucide-react"
 import { PredictionDashboard } from "@/components/prediction-dashboard"
 
 const App = () => (
@@ -6,14 +6,8 @@ const App = () => (
     <header className="border-b border-border sticky top-0 z-10 bg-background/80 backdrop-blur-sm">
       <div className="container mx-auto max-w-5xl px-4 py-3 flex items-center justify-between">
         <div className="flex items-center gap-2.5">
-          <div className="rounded-xl bg-primary/10 p-1.5">
-            <BrainCircuit className="h-5 w-5 text-primary" />
-          </div>
           <div>
-            <p className="text-sm font-semibold leading-tight">StockPredict AI</p>
-            <p className="text-xs text-muted-foreground leading-tight hidden sm:block">
-              LSTM Deep Learning · Multi-Horizon
-            </p>
+            <p className="text-sm font-semibold leading-tight">Stock Prediction Model</p>
           </div>
         </div>
         <div className="flex items-center gap-2 text-xs text-muted-foreground">

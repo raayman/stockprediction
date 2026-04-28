@@ -4,6 +4,16 @@ services:
     ports:
       - "8080:8000"
     restart: unless-stopped
+    develop:
+      watch:
+        - action: sync+restart
+          path: ./backend
+          target: /app
+          ignore:
+            - __pycache__/
+            - "*.pyc"
+        - action: rebuild
+          path: ./backend/requirements.txt
 
   frontend:
     build: ./frontend
@@ -12,3 +22,13 @@ services:
     depends_on:
       - backend
     restart: unless-stopped
+    develop:
+      watch:
+        - action: rebuild
+          path: ./frontend/package.json
+        - action: rebuild
+          path: ./frontend/package-lock.json
+        - action: rebuild
+          path: ./frontend/src
+        - action: rebuild
+          path: ./frontend/index.html

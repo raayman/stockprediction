@@ -59,7 +59,6 @@ export const PredictionDashboard = () => {
       {!result && !isLoading && !errorMessage && (
         <div className="flex flex-col items-center justify-center py-20 gap-3 text-center">
           <div className="rounded-2xl border border-border bg-card p-8 max-w-sm w-full space-y-3">
-            <div className="text-4xl">📈</div>
             <p className="font-medium">Enter a ticker symbol above</p>
             <p className="text-sm text-muted-foreground leading-relaxed">
               The LSTM model will train on historical data and predict price targets for the next day,
